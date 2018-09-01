@@ -7,6 +7,7 @@
 $('.box').slideUp();
 
 $('#shop-dropdown-header').click(function(){
+	$('.box').slideToggle();
   $('.fa-chevron-circle-down').toggleClass('turn-down');
 });
 
@@ -18,7 +19,7 @@ $('.location-box, .mapouter').slideUp();
 
 $('#locations-dropdown-header').click(function(){
 	$('.location-box, .mapouter').slideToggle();
-	$('.fa-chevron-circle-down').css('transform', 'rotate(180deg').css('transition', 'transform 0.5s');
+	  $('.fa-chevron-circle-down').toggleClass('turn-down');
 
 });
 
