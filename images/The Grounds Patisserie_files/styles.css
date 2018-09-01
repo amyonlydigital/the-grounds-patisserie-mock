@@ -1,0 +1,271 @@
+
+/*----------------------TEMPLATE CSS */
+
+
+/*  this is the code that will fix box settings */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.clear-fix:before {
+  color: red;
+  content:  "";
+/*  border: solid 1px red; */
+  display:block;
+  clear: both;
+}
+
+.clear-fix:after {
+  color: red;
+  content:  "";
+/*  border: solid 1px red; */
+  display:block;
+  clear: both;
+}
+
+/*----this is the styling now.....*/
+
+html, body {
+/*  padding: 0px;
+  margin: 0px;*/
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-size: 16px;
+  background-color: #fce1d6;
+}
+
+.nav-header {
+  background-color: #d1ddff;
+  color: #fff;
+  border-bottom: solid 3px white;
+  padding: 10px 10px;
+/*  padding: 30px 0;*/
+}
+
+.nav-header > .container > h2 {
+  display: inline-block;
+/*  text-align: center;*/
+  color: #ff9d75;
+  font-size: 2.3rem;
+/*  margin: 1.5rem 0;*/
+/*  line-height: 3rem;*/
+}
+
+.key-links {
+  height: 60px;
+}
+
+.container {
+/*  background-color: pink;*/
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#location-icon {
+  float:left;
+}
+
+#basket-icon {
+  float:right;
+}
+
+/*...................... FIXED PROMO TOP BAR ................... */
+
+
+.fixed-promo {
+/*  background-color: #fce1d6;
+  display: block;
+  position: fixed;
+  font-family: 'Rubik', sans-serif;
+  font-size: .7rem;*/
+
+}
+
+#fixed-container {
+/*  border: 3px dashed #9bb5ff;
+  background-color: #d1ddff;*/
+/*  max-width: 100%;*/
+/*  padding: 20px;
+  margin: 30px 10px;*/
+}
+
+
+
+
+/*...................... MAIN SECTION WITH SLIDER IMAGE ................... */
+
+.main {
+  background: url(../images/header.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 100px 0 400px 0;
+  color: #000;
+  text-align: center;
+}
+
+.main .container-main {
+  background-color: rgba(209, 221, 255, 0.5);
+  border: solid 1px grey;
+  width: 30%;
+  max-width: 900px;
+  margin: 0 auto;
+  float: right;
+  margin: 0 10px 0 0;
+  padding: 20px;
+}
+
+.main h1 {
+  font-size: 1.5rem;
+}
+
+.main p {
+  text-align: left;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+/*...................... SHOP OUR RANGE HEADER ................... */
+
+
+.dropdown-header > .container {
+  border-bottom: 3px dashed #9bb5ff;
+  color: #ff9d75;
+  font-weight: 700;
+  text-align: center;
+}
+
+.shop-header h2 {
+  text-align: center;
+}
+
+
+/*...................... CATEGORIES / 3 boxes in the middle... */
+
+.categories {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+}
+
+.cake-categories {
+  max-width: 100%;
+}
+
+.box {
+  border: 3px dashed #9bb5ff;
+  background-color: #d1ddff;
+  max-width: 31%;
+  padding: 20px;
+  margin: 30px 10px;
+  float: left;
+}
+
+/*........................................................................................ maps section .. */
+
+
+.location-box {
+  border: 3px dashed #9bb5ff;
+  background-color: #d1ddff;
+  max-width: 31%;
+  padding: 20px;
+  margin: 30px 10px;
+  float: left;
+}
+
+.location-box p {
+  font-family: 'Rubik', sans-serif;
+}
+
+.mapouter {
+  margin: 30px auto;
+  float:right;
+  text-align:right;
+  height:425px;
+  width:600px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  border: 3px dashed #9bb5ff;
+  height:425px;
+  width:600px;}
+
+
+/*........................................................................... instagram images  menu............... */
+
+.insta-feed {
+  max-width: 100%;
+}
+
+.insta-box {
+  max-width: 16%;
+  margin: 30px 3px;
+  float: left;
+}
+
+
+/*.......................................................................... navigation menu down below .. */
+
+#footer-nav {
+  background-color: #fcd3c2;
+}
+
+/*#footer-nav > .container {
+  border-bottom: 3px solid #9bb5ff;
+}*/
+
+#footer-nav ul{
+  padding: 20px;  
+  text-align: center;
+}
+
+#footer-nav li {
+  padding: 0px 10px 0px 10px;
+  margin: 0 10px;
+  font-weight: 400;
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/*................................. social media links menu down below .. */
+
+#social-links {
+  background-color: #ffb99e;
+}
+
+#social-links ul{
+  padding: 40px;
+  text-align: center;
+}
+
+#social-links li {
+  padding: 5px;
+  display: inline-block;
+}
+
+.social-logo {
+  max-height: 40px;
+}
+
+/*................................ bottom copyright tagline............... */
+
+.footer {
+  background-color: #ff9d75; 
+  line-height: 3rem;
+}
+
+.footer > .container {
+  margin: 1.5rem auto;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 900px;
+}
+

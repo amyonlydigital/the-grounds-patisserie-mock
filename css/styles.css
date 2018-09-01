@@ -1,0 +1,798 @@
+
+/*----------------------TEMPLATE CSS */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.clear-fix:before {
+  color: red;
+  content:  "";
+/*  border: solid 1px red; */
+  display:block;
+  clear: both;
+}
+
+.clear-fix:after {
+  color: red;
+  content:  "";
+/*  border: solid 1px red; */
+  display:block;
+  clear: both;
+}
+
+/*----this is the styling .....*/
+
+html, body {
+/*  padding: 0px;*/
+  margin: 0px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  /*background-color: #fce1d6;*/
+}
+
+.background-image {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 105vh;
+  z-index: -7;
+  background: url(../images/header.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+section {
+  background-color: #fce1d6;
+}
+
+.nav-header {
+  background-color: #d1ddff;
+  color: #fff;
+  border-bottom: solid 3px #ff9d75;
+  padding: 10px 10px;
+}
+
+.container { /*.......................is this still relevant now that there's bootstrap?? How does this container tag work with the existing bootstrap css*/
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#hamburger {
+  display:none;
+}
+
+@media (max-width: 575px){
+  #hamburger {
+    display:block;
+    font-size:1.5rem;
+    float:right;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  #hamburger.open {
+    transform:rotate(90deg);
+  }
+
+  .nav-header .open {
+    max-height:200px
+    background-color:red;
+  }
+
+  .menuitem>i {
+    display: none;
+  }
+
+  #ham-menu {
+    width: 150px; 
+/*    height: 100px; */
+/*    border: 1px solid blue; */
+    position: absolute; 
+    right: 0; z-index: 100; 
+    margin-top: 40px;
+    display: block;
+  }
+
+  #ham-menu a {
+      display: block;
+      padding: 3px 0px 3px 5px;
+      color: black;
+      text-decoration: none;
+      background-color: #d1ddff;
+      border: solid 1px #9bb5ff;
+  }
+
+  .toggle-display {
+    display:block !important;
+  }
+
+  .mobile-hide {
+    display:none;
+  }
+}
+
+  #ham-menu {
+    display:none;
+  }
+
+
+
+a {
+  text-decoration: none;
+}
+
+/*............................................FIXED PROMO BAR*/
+
+.fixed-promo {
+  background-color: #fce1d6;
+  display: block;
+  position: fixed;
+  font-family: 'Rubik', sans-serif;
+  font-size: .7rem;
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.fixed-promo p {
+  margin-bottom: 0px;
+}
+
+#fixed-container {
+  max-width: 100%;
+/*  padding: 20px;
+  margin: 30px 10px;*/
+}
+
+/*............................................HEADER NAV*/
+
+.nav-header {
+  margin-top: 40px;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menuitem {
+  align-self: center;
+}
+
+#logo {
+  height: 50px;
+}
+
+.fas {
+  font-size: 22px;
+}
+
+/*............................................MAIN IMAGE SLIDER*/
+
+.main {
+  padding: 100px 0 350px 0;
+  color: #000;
+  text-align: center;
+}
+
+.container-main .main {
+  background-color: rgba(209, 221, 255, 0.5);
+  border: solid 1px grey;
+  padding: 20px;
+  margin: 100px auto;
+}
+
+.main h1 {
+  font-size: 1.5rem;
+  font-family: 'Pacifico', sans-serif;
+}
+
+.main p {
+  text-align: left;
+}
+
+/*............................................SHOP HEADER*/
+
+.dropdown-header > .container {
+  border-bottom: 3px dashed #9bb5ff;
+  color: #ff9d75;
+  font-weight: 700;
+  text-align: center;
+}
+
+.dropdown-arrow {
+  padding-bottom: 3px;
+}
+
+.shop-header h2 {
+  text-align: center;
+}
+
+/*............................................SHOP CATEGORIES*/
+
+.categories {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+}
+
+.cake-categories {
+  max-width: 100%;
+  transition:transform 0.4s;
+}
+
+.img-hover {
+  overflow:hidden;
+  transition:transform 0.4s;
+}
+
+.img-hover:hover {
+  transform:scale(0.90);
+}
+
+.img-hover:hover .cake-categories {
+  transform: scale(1.8);
+}
+
+.box {
+  border: 3px dashed #9bb5ff;
+  background-color: #d1ddff;
+  max-width: 100%;
+  padding: 20px;
+  margin: 30px 10px;
+  float: left;
+}
+
+.box h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+
+/*............................................LOCATIONS SECTION*/
+
+.store-locations {
+  overflow: auto;
+}
+
+.location-box {
+  border: 3px dashed #9bb5ff;
+  background-color: #d1ddff;
+  max-width: 100%;
+  padding: 28px 15px;
+  margin: 30px 10px;
+  float: left;
+}
+
+.location-box p {
+  font-family: 'Rubik', sans-serif;
+}
+
+.location-box h3 {
+  font-size: 1rem;
+  padding-top: 20px;
+  font-family: 'Pacifico', sans-serif;
+}
+
+.mapouter {
+  margin: 30px auto;
+  float:right;
+  text-align:right;
+  height:425px;
+  width:600px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  border: 3px dashed #9bb5ff;
+  height:425px;
+  width:600px;     /*........................if this has a fixed width - how do i make it work within bootstrap */
+  margin: 0;
+  }
+
+/*frameborder="0"
+marginheight="0" marginwidth="0"*/
+
+/*............................................INSTA SLIDER (not active)*/
+/*.insta-feed {
+  max-width: 100%;
+}
+
+.insta-box {
+  max-width: 16%;
+  margin: 30px 3px;
+  float: left;
+}*/
+
+/*............................................SLICK SLIDER*/
+
+.slick-track img {
+  height: 100%;
+  margin: 4px;
+}
+
+.pad {
+/*   background:red; */
+  padding:10px 28px;
+}
+
+.carousel img {
+  margin: 2px;
+}
+
+/* *---------- Slick Slider Arrows Dots Styling ----------*/
+
+/* Slider */
+/*.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}*/
+
+/* Icons */
+/* The Bootstrap FontAwesome is loaded and utalised for icons */
+
+/* Dots */
+.slick-slider{
+    margin-bottom: 30px;
+}
+.slick-dots{
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+.slick-dots li button:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '\f111';
+    text-align: center;
+    opacity: .25;
+    color: #FF9D75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #FF9D75;
+}
+
+/*............................................SLICK IMAGE HOVERS*/
+
+.hover-container {
+    position: relative;
+    width: 50%;
+    margin: 0px 2px 0px 2px;
+}
+
+.slick-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hover-container:hover .image {
+  opacity: 0.3;
+}
+
+.hover-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #d1ddff;
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  padding: 16px 32px;
+}
+
+/*............................................FOOTER NAV*/
+
+#footer-nav {
+  background-color: #fcd3c2;
+  border-bottom:solid 1px #fce1d6;
+}
+
+.footer-nav { 
+  margin: 0px;
+}
+
+.footer-nav a { 
+  color:black;
+}
+
+#footer-nav ul{
+  padding: 20px;  
+  text-align: center;
+}
+
+#footer-nav li {
+  padding: 0px 10px 0px 10px;
+  margin: 0 10px;
+  font-weight: 400;
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/*............................................SOCIAL LINKS*/
+
+#social-links {
+  background-color: #ffb99e;
+  margin: 0px;
+  border-bottom:solid 1px #fce1d6;
+}
+
+.social-links { 
+  margin: 0px;
+}
+
+#social-links ul{
+  padding: 20px;
+  text-align: center;
+}
+
+#social-links li {
+  padding: 5px;
+  display: inline-block;
+}
+
+.social-logo {
+  max-height: 40px;
+}
+
+/*............................................COPYRIGHT TAGLINE*/
+
+.footer {
+  background-color: #ff9d75; 
+  font-family: 'Pacifico', sans-serif;
+}
+
+.footer > .container {
+/*  margin: 1.5rem auto;*/
+  line-height: 2rem;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+/*  max-width: 900px;*/
+}
+
+
+/*................................................................................SHOP PAGE TAGLINE*/
+/***CAN't TARGET THE H1 AS THE SHOP HEADER***/
+
+.nav-header h1 {
+  font-size:3rem;
+  font-family:'Pacifico', sans-serif;
+  margin-bottom: 0px;
+  color:black;
+}
+
+.shop-nav-header {
+  margin: 0;
+}
+/*FLOAT CATEGORY ARROWS TO THE RIGHT***/
+#category-arrow {
+  float: right;
+  padding-right: 3px;
+}
+
+/*............................................SHOP IMAGES TAGLINE*/
+
+.shop-content img {
+  width:100%;
+  border: 1px dashed #9bb5ff;
+  background-color: #d1ddff;
+  padding: 4px;
+}
+
+.shop-content h6{
+  margin-top: 8px;
+}
+
+.shop-content p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.6rem;
+  font-style: italic;
+  margin: 0px;
+}
+
+.shop-content h6 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+}
+
+.shop-content h2 {
+  border-bottom: 3px dashed #9bb5ff;
+  color: #ff9d75;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.left-menu /*THIS NEEDS WORK...................................................................... */ {
+  background-color: #d1ddff;
+  border: dashed 1px #9bb5ff;
+  padding: 15px;
+  margin-bottom: 1500px;
+}
+
+.pad-height {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*................................................................................FILTER DROP DOWN MENUS */
+
+.primary_nav_wrap {
+  margin-top:15px;
+}
+
+.primary_nav_wrap ul
+{
+  list-style:none;
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+.primary_nav_wrap > ul > li > a {
+  display:block;
+  color: black;
+  background-color: #d1ddff;
+  width: 180px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1rem;
+  line-height:32px;
+  padding-left: 5px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.primary_nav_wrap li {
+  font-family: 'Rubik', sans-serif;
+}
+
+.primary_nav_wrap .fas {
+  font-size: 1rem;
+}
+
+.primary_nav_wrap ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0
+}
+
+.primary_nav_wrap ul li.current-menu-item {
+  background:blue;
+}
+
+.primary_nav_wrap ul li:hover {
+  background-color:#ff9d75;
+}
+
+.primary_nav_wrap ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#fce1d6;
+  padding:0;
+}
+
+.primary_nav_wrap ul ul li {
+  float:none;
+  width:200px
+}
+
+.primary_nav_wrap ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+}
+
+.primary_nav_wrap ul ul ul {
+  top:0;
+  left:100%
+}
+
+
+.primary_nav_wrap ul li:hover ul {
+  display:block;
+}
+
+ul:hover li {
+  display: block;
+}
+
+
+
+/*................................................................................SHOP CATEGORY LEFT HAND NAV*/
+
+
+.shop-content span {
+  font-family: 'Rubik', sans-serif;
+  color: #000;
+}
+
+.shop-content a {
+  color: black;
+}
+
+.shop-content .category-header {
+  font-size: 1.3rem;
+/*  padding-top: 70px;
+  border:solid 1px red;*/
+}
+
+hr {
+  border-top: dashed 8px rgb(209, 221, 255);
+  background-color: #fce1d6;
+  margin: 0;
+}
+
+/*..............................................................................FORM FORMATTING */
+
+@media (max-width: 768px) {
+   .main-content {
+     padding: 20px 8px;
+   }
+ }
+ 
+ .main-content {
+  margin-top: 40px;
+  padding-left: 10px;
+ }
+
+ .main-content h4{
+  font-family: 'Pacifico', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+ }
+
+.main-content span > p {
+  font-size: 1rem;
+  text-align: center;
+ }
+
+/* form specific formatting */
+ .form-group {
+  display: flex;
+  flex-direction: row;
+ }
+ 
+ .form-group label {
+  flex: none;
+  display: block;
+  width: 125px;
+  font-weight: bold;
+  font-size: 1em;
+ }
+ 
+ .form-group .input-control {
+  flex: 1 1 auto;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  padding: 4px;
+  margin-top: -4px;
+  border:dotted 1px #ff9d75;
+  background-color: #fce1d6;
+ }
+ 
+ button {
+  padding: 5px 15px;
+  margin: 5px;
+  min-width: 300px;
+  border:solid 1px #ffb99e;
+  background-color: #ffb99e;
+ }
+
+button:hover {
+  background-color:#d1ddff;
+  border:solid 1px #d1ddff;
+}
+
+::placeholder {
+  color: black;
+}
+ 
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+  }
+  .form-group .input-control {
+    margin-top: 2px;
+  }
+}
+
+/*..............................................................................MODAL FORMATTING */
+
+.modal-content {
+  background-color: #fce1d6;
+  border: solid 2px #ffb99e;
+  width: 540px;
+}
+
+.modal-header .close {
+  width: 30px;
+  padding: 10px;
+}
+
+
+/*................................................................................JAVASCRIPT CSS*/
+
+/*PUT THE TURN DOWN ARROW FORMATTING BACK IN HERE*/
+
+
+.turn-down {
+  transform:rotate(180deg) scale(1.1);
+  color:black;
+}
