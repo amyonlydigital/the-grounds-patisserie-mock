@@ -2,13 +2,20 @@
 
 <html>
 
+	<div class="background-image"></div>
+
 	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<title>The Grounds Patisserie</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Pacifico|Rubik:400,700" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+<!-- 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" /> -->
+<!-- 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" href="css/all.min.css">
 		<link rel="stylesheet" href="css/styles.css">
 
 	</head>
@@ -19,9 +26,17 @@
 
 		<section class="fixed-promo">
 
-			<div id="fixed-container">
+			<div id="fixed-container container">
 
-				<p>ORDER BY 11AM FOR SAME DAY PICK-UP AVAILABILITY. COMPLIMENTARY CANDLES ON ORDERS OVER $85</p>
+				<div class="row">
+
+					<div class="col-md-12 pad-height">
+
+						<p>ORDER BY 11AM FOR SAME DAY PICK-UP AVAILABILITY. COMPLIMENTARY CANDLES ON ORDERS OVER $85</p>
+
+					</div>
+
+				</div>
 
 			</div>
 
@@ -31,35 +46,67 @@
 
 		<header class="nav-header clear-fix">	
 
-			<div class="container" id="menu">
+			<div class="container">
 
-				<span class="menuitem"><i class="fas fa-map-marker-alt"></i></span>
+				<div class="row">
 
-				<span class="menuitem"><img id="logo" src="images/logo.png" alt="The Grounds Logo"></span>
+					<div class="col-md-4 pad-height mobile-hide" id="menu">
 
-				<span class="menuitem"><i class="fas fa-shopping-cart"></i></span>
+						<span class="menuitem"><i class="fas fa-map-marker-alt"></i></span>
+
+					</div>
+
+					<div class="col-md-4 pad-height" id="menu">
+
+						<span class="menuitem"><img id="logo" src="images/logo.png" alt="The Grounds Logo"></span>
+
+					</div>
+
+					<div class="col-md-4 pad-height mobile-hide" id="menu">
+
+						<span class="menuitem"><i class="fas fa-shopping-cart"></i></span>
+
+					</div>
+
+				</div>
 
 			</div>	
+
+		<div id="hamburger">☰</div>
+
+		<div id="ham-menu">
+			<a href="file:///Users/thegroundsofalexandria/Desktop/GA%20FEWD/Assignment/shop.html">SHOP</a>
+			<a href="">LOCATIONS</a>
+			<a href="">ABOUT</a>
+			<a href="">CONTACT</a>
+		</div>
 
 		</header>
 
 <!-- MAIN IMAGE SLIDER -->
 
-		<section class="main">
+		<div class="container">
 
-			<div class="container">
+			<div class="container-main">
 
-				<div class="container-main">
+				<div class="row">
 
-					<h1>The Grounds Patisserie</h1>
+					<div class="col-md-6">
+					</div>
 
-					<p>At The Grounds, we live to create special moments and love the occasions that bring the whole gang together to celebrate over the sheer simplicity of sharing a slice of cake.</p>
+					<div class="col-md-6 pad-height main">
+
+						<h1>The Grounds Patisserie</h1>
+
+						<p>At The Grounds, we live to create special moments and love the occasions that bring the whole gang together to celebrate over the sheer simplicity of sharing a slice of cake.</p>
+
+					</div>
 
 				</div>
 
 			</div>
 
-		</section>
+		</div>
 
 <!-- SHOP OUR RANGE HEADER-->
 
@@ -67,7 +114,15 @@
 
 			<div class="container">
 
-				<h2>SHOP OUR OFFERING <span class="dropdown-arrow"><i class="fas fa-chevron-circle-down"></i></span></h2>
+				<div class="row">
+
+					<div class="col-md-12 pad-height">
+
+						<h2>SHOP OUR OFFERING <span class="dropdown-arrow"><i class="fas fa-chevron-circle-down"></i></span></h2>
+		
+					</div>
+
+				</div>
 
 			</div>
 
@@ -79,27 +134,55 @@
 
 			<div class="container clear-fix">
 
-				<div id="cat1" class="box">
+				<div class="row">
 
-					<img class="cake-categories" id="cakes" src="images/cakes.png" alt="cakes">
+					<div class="col-md-4 pad-height">				
 
-					<h3>Cakes</h3>
+						<div id="cat1" class="box">
 
-				</div>
+							<div class="img-hover">
 
-				<div id="cat2" class="box">
+								<img class="cake-categories shop-images" id="cakes" src="images/cakes.png" alt="cakes">
 
-					<img class="cake-categories" id="tarts" src="images/tarts.png" alt="tarts">
+							</div>
 
-					<h3>Tarts</h3>
+							<h3>Cakes</h3>
 
-				</div>
+						</div>
 
-				<div id="cat3" class="box">
+					</div>
 
-					<img class="cake-categories" id="kids" src="images/kids.png" alt="kids cakes">
+					<div class="col-md-4 pad-height">	
 
-					<h3>Kids</h3>
+						<div id="cat2" class="box">
+
+							<div class="img-hover">
+
+								<img class="cake-categories shop-images" id="tarts" src="images/tarts.png" alt="tarts">
+
+							</div>
+
+							<h3>Tarts</h3>
+
+						</div>
+
+					</div>
+
+					<div class="col-md-4 pad-height">	
+
+						<div id="cat3" class="box">
+
+							<div class="img-hover">
+
+								<img class="cake-categories shop-images" id="kids" src="images/kids.png" alt="kids cakes">
+
+							</div>
+
+							<h3>Kids</h3>
+
+						</div>
+
+					</div>
 
 				</div>
 
@@ -112,8 +195,16 @@
 		<section class="dropdown-header" id="locations-dropdown-header">
 
 			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 pad-height">
 			
-				<h2>VIEW OUR LOCATIONS <span class="dropdown-arrow"><i class="fas fa-chevron-circle-down"></i></span></h2>
+						<h2>VIEW OUR LOCATIONS <span class="dropdown-arrow"><i class="fas fa-chevron-circle-down"></i></span></h2>
+
+					</div>
+				
+				</div>
 
 			</div>
 
@@ -125,25 +216,37 @@
 
 			<div class="container">
 
-				<div id="locations-text" class="location-box">
+				<div class="row">
 
-					<p>Our handmade cakes are available to collect from our Sydney venues:</p>
+					<div class="col-md-4 pad-height">
 
-					<h3>The Grounds of Alexandria</h3>
+						<div id="locations-text" class="location-box">
 
-					<p>Where it all began, The Grounds of Alexandria houses its own artisan patisserie, located within The Cafe.</p>
+							<p>Our handmade cakes are available to collect from our Sydney venues:</p>
 
-					<h3>The Grounds of the City</h3>
+							<h3>The Grounds of Alexandria</h3>
 
-					<p>Located in the heart of the CBD, The Grounds of the City offers a haven away from home and a hub for heart to hearts.</p>
+							<p>Where it all began, The Grounds of Alexandria houses its own artisan patisserie, housed within The Cafe.</p>
 
-				</div>
+							<h3>The Grounds of the City</h3>
 
-				<div class="mapouter">
+							<p>Located in the heart of the CBD, The Grounds of the City offers a haven away from home and a hub for heart to hearts.</p>
 
-					<div class="gmap_canvas">
+						</div>
 
-						<iframe width="600" height="425" id="gmap_canvas" src="https://www.google.com/maps/d/embed?mid=1aISBpRCCrmy6kOrDMJxhC7CfWDs-gEuE&hl=en" width="600" height="400"  scrolling="no"></iframe>
+					</div>
+
+					<div class="col-md-8 pad-height">
+
+						<div class="mapouter">
+
+							<div class="gmap_canvas"> <!-- this is not mobile responsive..................................................... -->
+
+								<iframe width="600" height="425" id="gmap_canvas" src="https://www.google.com/maps/d/embed?mid=1aISBpRCCrmy6kOrDMJxhC7CfWDs-gEuE&hl=en" width="600" height="400"  scrolling="no"></iframe>
+
+							</div>
+
+						</div>
 
 					</div>
 
@@ -159,20 +262,78 @@
 
 			<div class="container">
 
-				<div class="multiple-items">
+				<div class="row">
 
-					<img src="images/blackforest.png" alt="Black Forest Cake">
-					<img src="images/bee.png" alt="Kids Bee Cake">
-					<img src="images/mango.png" alt="Mango Sponge Cake">
-					<img src="images/fluffy.png" alt="Fluffy Sponge Cake">
-					<img src="images/raspberry.png" alt="Raspberry Tart">
-					<img src="images/confetti.png" alt="Confetti Rainbow Cake">
-					<img src="images/blackforest.png" alt="Black Forest Cake">
-					<img src="images/bee.png" alt="Kids Bee Cake">
-					<img src="images/mango.png" alt="Mango Sponge Cake">
-					<img src="images/fluffy.png" alt="Fluffy Sponge Cake">
-					<img src="images/raspberry.png" alt="Raspberry Tart">
-					<img src="images/confetti.png" alt="Confetti Rainbow Cake">
+					<div class="col-md-12 pad-height">
+						
+						<div class="carousel responsive">
+
+							<div class="hover-container">
+								<img src="images/blackforest.png" alt="Black Forest Cake" class="slick-image">
+								<div class="middle">
+   									<a href="shop.html#blackforest"><div class="text">Black Forest Cake</div></a>
+ 								</div>
+ 							</div>
+
+ 							<div class="hover-container">
+								<img src="images/bee.png" alt="Kids Bee Cake" class="slick-image">
+								<div class="middle">
+   									<a href="shop.html#bee"><div class="text">Kid's Bee Cake</div></a>
+ 								</div>
+ 							</div>
+
+ 							<div class="hover-container">
+								<img src="images/raspberry.png" alt="Raspberry Tart" class="slick-image">
+								<div class="middle">
+   									<a href="shop.html#berry"><div class="text">Berry Choc Tart</div></a>
+ 								</div>
+ 							</div>
+
+ 							<div class="hover-container">
+								<img src="images/mango.png" alt="Mango Sponge Cake" class="slick-image">
+								<div class="middle">
+   									<a href="shop.html#mango"><div class="text">Fluffy Mango Sponge</div></a>
+ 								</div>
+ 							</div>
+
+ 							<div class="hover-container">
+								<img src="images/fluffy.png" alt="Fluffy Sponge Cake" class="slick-image">
+								<div class="middle">
+   									<a href="shop.html#fluffy"><div class="text">Fresh Cream Sponge</div></a>
+ 								</div>
+ 							</div>
+
+ 							<div class="hover-container">
+								<img src="images/confetti.png" alt="Confetti Rainbow Cake" class="slick-image">
+								<div class="middle">
+   									<a href="shop.html#confetti"><div class="text">Kid's Confetti Cake</div></a>
+ 								</div>
+ 							</div>
+
+ 							<div class="hover-container">
+								<img src="images/bluecupcake.png" alt="Blue Cupcake" class="slick-image">
+								<div class="middle">
+   									<a href="shop.html#bluecupcake"><div class="text">Kid's Giant Cupcake</div></a>
+ 								</div>
+ 							</div>
+
+ 							<div class="hover-container">
+								<img src="images/citrus.png" alt="Citrus Cheesecake" class="slick-image">
+								<div class="middle">
+   									<a href="shop.html#citrus"><div class="text">Citrus Layer Cake</div></a>
+ 								</div>
+ 							</div>
+
+ 							<div class="hover-container">
+								<img src="images/caramel.png" alt="Salted Caramel Tart" class="slick-image">
+								<div class="middle">
+   									<a href="shop.html#caramel"><div class="text">Salted Caramel Tart</div></a>
+ 								</div>
+ 							</div>
+
+						</div>
+
+					</div>
 
 				</div>
 			
@@ -186,14 +347,22 @@
 
 			<div class="container">
 
-			<nav>
-				<ul class="footer-nav">
-					<li>SHOP</li>
-					<li>LOCATIONS</li>
-					<li>ABOUT</li>
-					<li>CONTACT</li>
-				</ul>
-			</nav>
+				<div class="row">
+
+					<div class="col-md-12 pad-height"> <!-- is this right or should it be 4 x columns? it doesn't stack nicely...................... -->
+
+						<nav>
+							<ul class="footer-nav">
+								<li><a href="file:///Users/thegroundsofalexandria/Desktop/GA%20FEWD/Assignment/shop.html">SHOP</a></li>
+								<li><a href="">LOCATIONS</a></li>
+								<li><a href="">ABOUT</a></li>
+								<li><a href="">CONTACT</a></li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</div>
 
 			</div>
 
@@ -204,13 +373,21 @@
 		<section id="social-links">
 			
 			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 pad-height">
 			
-				<ul class="social-links">
-					<li><img class="social-logo" src="images/facebook.png" alt="facebook"></li>
-					<li><img class="social-logo" src="images/instagram.png" alt="instagram"></li>
-					<li><img class="social-logo" src="images/linkedin.png" alt="linkedin"></li>
-					<li><img class="social-logo" src="images/pinterest.png" alt="twitter"></li>
-				</ul>
+						<ul class="social-links">
+							<li><a href="https://www.facebook.com/thegrounds"><img class="social-logo" src="images/facebook.png" alt="facebook"></a></li>
+							<li><a href="https://www.instagram.com/thegrounds"><img class="social-logo" src="images/instagram.png" alt="instagram"></a></li>
+							<li><a href="https://www.linkedin.com/company/the-grounds-of-alexandria"><img class="social-logo" src="images/linkedin.png" alt="linkedin"></a></li>
+							<li><a href="https://www.pinterest.com.au/thegroundsofalexandria"><img class="social-logo" src="images/pinterest.png" alt="twitter"></a></li>
+						</ul>
+
+					</div>
+
+				</div>
 			
 			</div>
 
@@ -222,7 +399,15 @@
 
 			<div class="container">
 
-				<p>&copy; The Grounds Patisserie. 2018.</p>
+				<div class="row">
+
+					<div class="col-md-12 pad-height">
+
+						<p>&copy; The Grounds Patisserie. 2018.</p>
+
+					</div>
+				
+				</div>
 
 			</div>
 
