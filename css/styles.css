@@ -793,6 +793,6 @@ button:hover {
 
 
 .turn-down {
-  transform:rotate(180deg) scale(1.1);
-  color:black;
+  transform:rotate(180deg) scale(1.2);
+  color:#9bb5fe;
 }

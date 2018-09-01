@@ -8,7 +8,7 @@ $('.box').slideUp();
 
 $('#shop-dropdown-header').click(function(){
 	$('.box').slideToggle();
-  $('.fa-chevron-circle-down').toggleClass('turn-down');
+  $('#shop-drop i').toggleClass('turn-down');
 });
 
 // ............................................LOCATIONS DROP DOWN 
@@ -19,7 +19,7 @@ $('.location-box, .mapouter').slideUp();
 
 $('#locations-dropdown-header').click(function(){
 	$('.location-box, .mapouter').slideToggle();
-	  $('.fa-chevron-circle-down').toggleClass('turn-down');
+	$('#location-drop i').toggleClass('turn-down');
 
 });
 
